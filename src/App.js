@@ -1,11 +1,10 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import FlashcardList from './FlashcardList';
 import './App.css'
-import axios from 'axios'
 import {card} from './card.js'
 function App() {
   const [FCOption, setFCOption] = useState(0)
-  const [categories, setCategories] = useState(card)
+  const [categories, ] = useState(card)
   const defaultFlashCard = categories[0].cards.map((card)=>{
     return {
       id:`${Math.random()}-${Date.now()}`,
